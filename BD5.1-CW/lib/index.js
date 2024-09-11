@@ -1,0 +1,7 @@
+const sq = require('sequelize');
+const sequelize = new sq.Sequelize({
+  dialect: 'sqlite',
+  storage: './BD5.1-CW/database.sqlite',
+});
+//console.log('sequelize-->', sequelize);
+module.exports = { DataTypes: sq.DataTypes, sequelize };
